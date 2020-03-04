@@ -1,5 +1,15 @@
 main{
-	min-height: 500px;
+	/*min-height: 300px;*/
+	max-height: 768px;
 	min-width: 600px;
 	margin:3rem 3rem 3rem 3rem;
+}
+#result {
+	margin-bottom: 4rem;
+}
+footer.ui.inverted.vertical.footer.segment{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
