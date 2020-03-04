@@ -141,12 +141,6 @@ function dns_check(getInputUrl,mySlaves,result){
 	}).done(function(request){
 		$("#result").append("<table class=\"ui unstackable table\"><thead></thead><tbody></tbody></table>");
 		let resultId = $("#result").find("table"), formId = $("#form");
-		// if(request.error === "limit_exceeded"){
-		// 	formId.find("p").remove();
-		// 	formId.append("<p style='color:red'>Bạn đã kiểm tra trang này quá nhiều lần. Vui lòng thử lại sau 5 phút.</p>");
-		// 	return;
-		// }
-		// formId.find("p").remove();
 		$("body").append('<div class="ui active dimmer" id="loader"><div class="ui loader"></div></div>');
 		resultId.find("thead").html("<tr><th>Location</th><th>Result</th><th>TTL</th></tr>");
 		
@@ -172,7 +166,6 @@ function dns_check(getInputUrl,mySlaves,result){
 	                            break;
 	                        }
 	                    }
-	                    // console.log(slave + ": " +data[slave]);
 	                }
 	                if (mySlaves.length > 0) {
 	                    setTimeout(function() {
