@@ -4,6 +4,7 @@
 
 1. Jquery v3.4.1
 2. Semantic UI - 2.4.0
+3. Webpack
 
 
 ## 								Security Vulnerabilities
