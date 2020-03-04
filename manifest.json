@@ -1,0 +1,18 @@
+{
+    "name": "Check Host Extensions",
+    "version": "1.0",
+    "description": "Checking Info, Whois, Ping, HTTP, DNS Website",
+    "permissions": [
+    	"https://check-host.net/"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "images/logo.png",
+      "32": "images/logo.png",
+      "48": "images/logo.png",
+      "128": "images/logo.png"
+    },
+    "manifest_version": 2
+ }
