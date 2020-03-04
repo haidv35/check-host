@@ -1,4 +1,4 @@
-# Checking Info, Whois, Ping, HTTP, DNS Website
+# Chrome Extension Checking Info, Whois, Ping, HTTP, DNS Website
 
 ## 									Platform used
 
