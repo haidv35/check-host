@@ -4,9 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Check-Host</title>
 	<link rel="stylesheet" href="semantic-ui/semantic.min.css">
+	<link rel="stylesheet" href="semantic-ui/components/flag.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header>
+		<section class="ui one column centered grid">
+			<div class="ui hidden divider"></div>
+			<div class="row">
+				<p id="yourIP" class="ui label"><span style="font-weight: bold;">IP: </span></p>
+				<p id="yourCountry" class="ui label"><span style="font-weight: bold;">Country: </span></p>
+				<p id="yourISP" class="ui label"><span style="font-weight: bold;">ISP: </span></p>
+			</div>
+		</section>
+	</header>
 	<main>
 		<section class="ui form" id="form">
 			<div class="ui one column centered grid">
@@ -19,19 +30,16 @@
 				<div class="row">
 			    	<button class="ui secondary button" id="info">Info</button>
 			    	<button class="ui secondary button" id="ping">Ping</button>
-			    	<button class="ui secondary button">Whois</button>
-			    	<button class="ui secondary button">DNS</button>
+			    	<button class="ui secondary button" id="whois">Whois</button>
+			    	<button class="ui secondary button" id="dns">DNS</button>
 			    </div>
 			</div>
 		</section>
-		<table class="ui unstackable table" id="result">
-			<thead>
-				
-			</thead>
-			<tbody>
-				
-			</tbody>
-		</table>
+		<div class="ui hidden divider"></div>
+		<section class="ui" id="result">
+			
+		</section>
+		
 	</main>
 	<!-- <script src="js/custom.js"></script> -->
 	<script src="js/jquery.min.js"></script>
