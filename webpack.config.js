@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-	entry: './js/index.js',
+	entry: './src/js/index.js',
 	// watch: true,
 	output: {
 		filename: './js/bundle.js',
@@ -11,14 +11,24 @@ module.exports = {
 	plugins: [
 		new webpack.ProvidePlugin({
 	    	$: "jquery",
-	    	jQuery: "jquery"
+	    	jQuery: "jquery",
+	    	'window.jQuery': 'jquery'
 		})
 	],
-	externals: {
-		jquery: 'jQuery'
-	},
 	module: {
         rules: [
+        	{
+                test: require.resolve('jquery'),
+                use: [{
+                        loader: 'expose-loader',
+                        options: 'jQuery'
+                    },
+                    {
+                        loader: 'expose-loader',
+                        options: '$'
+                    }
+                ]
+            },
 	        {
 	            test: /\.css$/,
 	            use: ['style-loader', 'css-loader']
@@ -27,6 +37,7 @@ module.exports = {
 	            test: /\.(png|woff|woff2|eot|ttf|svg)$/,
 	            loader: 'url-loader?limit=100000'
 	        }
+
         ]
     }
 };
