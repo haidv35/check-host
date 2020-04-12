@@ -1,3 +1,6 @@
+html{
+	height:35rem;
+}
 main{
 	/*min-height: 300px;*/
 	max-height: 768px;
@@ -12,4 +15,7 @@ footer.ui.inverted.vertical.footer.segment{
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+button.ui.secondary.button:focus{
+	background-color: red;
 }

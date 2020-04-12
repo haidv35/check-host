@@ -1,10 +1,11 @@
 # Chrome Extension Checking Info, Whois, Ping, HTTP, DNS Website
 
+![image-20200412200959325](/Users/haiclover/Library/Application Support/typora-user-images/image-20200412200959325.png)
+
 ## 									Platform used
 
 1. Jquery v3.4.1
 2. Semantic UI - 2.4.0
-3. Webpack
 
 
 ## 								Security Vulnerabilities
