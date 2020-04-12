@@ -1,6 +1,6 @@
 # Chrome Extension Checking Info, Whois, Ping, HTTP, DNS Website
 
-![image-20200412200959325](/Users/haiclover/Library/Application Support/typora-user-images/image-20200412200959325.png)
+![image-20200412200959325](images/image-20200412200959325.png)
 
 ## 									Platform used
 
